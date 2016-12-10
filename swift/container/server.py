@@ -342,6 +342,7 @@ class ContainerController(BaseStorageServer):
     @timing_stats()
     def PUT(self, req):
         """Handle HTTP PUT request."""
+	print "Inside put module of swift container server.py"  
         drive, part, account, container, obj = split_and_validate_path(
             req, 4, 5, True)
         req_timestamp = valid_timestamp(req)

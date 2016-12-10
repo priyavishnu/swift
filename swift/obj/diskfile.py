@@ -1558,7 +1558,8 @@ class BaseDiskFileReader(object):
                  quarantine_hook, use_splice, pipe_size, diskfile,
                  keep_cache=False):
         # Parameter tracking
-        self._fp = fp
+        print "Inside disk file reader in obj.py"
+	self._fp = fp
         self._data_file = data_file
         self._obj_size = obj_size
         self._etag = etag
